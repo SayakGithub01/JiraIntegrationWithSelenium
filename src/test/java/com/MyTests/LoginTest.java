@@ -16,7 +16,7 @@ import com.util.JiraPolicy;
  */
 public class LoginTest extends BaseTest{
 	
-	@JiraPolicy(logTicketReady=false)
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority=1, enabled=true)
 	public void verifyLoginPageTitleTest(){
 		String title = page.getInstance(LoginPage.class).getLoginPageTitle();
